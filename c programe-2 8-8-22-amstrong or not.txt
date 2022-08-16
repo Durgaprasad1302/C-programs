@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int r,n,k=0;
+	scanf("%d",&n);
+	int m=n;
+	while(n>0)
+	{
+		r=n%10;
+		k=k+r*r*r;
+		n/=10;
+	}
+	if(k==m)
+	printf("AMSTRONG NUMBER");
+	else
+	printf("NOT AMSTRONG NUMBER");
+}
